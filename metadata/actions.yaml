@@ -33,6 +33,8 @@ actions:
       headers:
         - name: x-pizzastack-secret-key
           value_from_env: HASURA_PIZZASTACK_SECRET
+    permissions:
+      - role: guest
     comment: Customer login
   - name: customerVerifyCode
     definition:
@@ -41,6 +43,8 @@ actions:
       headers:
         - name: x-pizzastack-secret-key
           value_from_env: HASURA_PIZZASTACK_SECRET
+    permissions:
+      - role: guest
     comment: Customer verify code
 custom_types:
   enums: []
