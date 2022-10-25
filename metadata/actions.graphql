@@ -95,5 +95,6 @@ type CustomerVerifyCodeOutput {
 
 type CreateOrderOutput {
   id: String!
+  checkout_url: String
 }
 
