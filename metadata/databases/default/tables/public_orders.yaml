@@ -31,14 +31,15 @@ select_permissions:
   - role: user
     permission:
       columns:
-        - id
+        - client_address
         - client_name
         - client_phone
-        - client_address
-        - status
-        - created_at
         - comment
+        - created_at
+        - id
+        - payment_status
         - payment_type
+        - status
       computed_fields:
         - sum
       filter:
