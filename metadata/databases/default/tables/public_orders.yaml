@@ -59,3 +59,16 @@ event_triggers:
     headers:
       - name: x-pizzastack-secret-key
         value_from_env: HASURA_PIZZASTACK_SECRET
+  - name: order_updated
+    definition:
+      enable_manual: false
+      update:
+        columns: '*'
+    retry_conf:
+      interval_sec: 10
+      num_retries: 0
+      timeout_sec: 60
+    webhook_from_env: HASURA_EVENT_WEBHOOK_HANDLER
+    headers:
+      - name: x-pizzastack-secret-key
+        value_from_env: HASURA_PIZZASTACK_SECRET
