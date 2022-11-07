@@ -1,5 +1,5 @@
 table:
-  name: order_status
+  name: payment_status
   schema: public
 is_enum: true
 select_permissions:
