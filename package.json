@@ -1,11 +1,10 @@
 {
   "name": "hasura",
-  "version": "0.1.0",
-  "license": "MIT",
+  "packageManager": "yarn@4.1.1",
   "scripts": {
-    "start": "hasura console --admin-secret myadminsecretkey --skip-update-check"
+    "start": "hasura console"
   },
   "devDependencies": {
-    "hasura-cli": "^2.9.0"
+    "hasura-cli": "2.0.0"
   }
 }
